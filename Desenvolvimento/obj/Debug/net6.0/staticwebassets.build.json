@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "Hash": "QOnV0Oc8/kQv80GrGnkla+95Q6siqOD/YXruJHNjXm0=",
+  "Source": "Desenvolvimento",
+  "BasePath": "_content/Desenvolvimento",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Desenvolvimento\\wwwroot",
+      "Source": "Desenvolvimento",
+      "ContentRoot": "C:\\Users\\maria\\TechMart\\TechMart\\Desenvolvimento\\wwwroot\\",
+      "BasePath": "_content/Desenvolvimento",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\maria\\TechMart\\TechMart\\Desenvolvimento\\wwwroot\\index.html",
+      "SourceId": "Desenvolvimento",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\maria\\TechMart\\TechMart\\Desenvolvimento\\wwwroot\\",
+      "BasePath": "_content/Desenvolvimento",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\maria\\TechMart\\TechMart\\Desenvolvimento\\wwwroot\\script.js",
+      "SourceId": "Desenvolvimento",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\maria\\TechMart\\TechMart\\Desenvolvimento\\wwwroot\\",
+      "BasePath": "_content/Desenvolvimento",
+      "RelativePath": "script.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\script.js"
+    },
+    {
+      "Identity": "C:\\Users\\maria\\TechMart\\TechMart\\Desenvolvimento\\wwwroot\\style.css",
+      "SourceId": "Desenvolvimento",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\maria\\TechMart\\TechMart\\Desenvolvimento\\wwwroot\\",
+      "BasePath": "_content/Desenvolvimento",
+      "RelativePath": "style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\style.css"
+    }
+  ]
+}
