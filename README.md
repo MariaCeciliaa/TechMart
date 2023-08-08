@@ -8,7 +8,7 @@ Documentação e desenvolvimento da plataforma TechMart criada pelo grupo de alu
 - Maria Cecilia Molonha  
 - Ruy Miguel Penha Rodrigues 
 
-## Saiba Mais sobre o TechMart
+## Saiba Mais sobre o TechMart 🧐
 
 ### **Explicação**
 O TechMart é uma plataforma de leilão de artigos eletrônicos que tem como objetivo proporcionar aos usuários uma forma mais acessível e sustentável de adquirir produtos eletrônicos. A plataforma permitirá que os usuários participem de leilões de artigos eletrônicos usados ou novos, fornecendo uma oportunidade de compra mais econômica, além de incentivar a reutilização de eletrônicos que antes seriam descartados no lixo.
