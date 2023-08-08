@@ -57,7 +57,7 @@ export default () => {
                     <S.LastAcessText>Último acesso há 11 horas </S.LastAcessText>
                     <S.SeparatorLine></S.SeparatorLine>
                     <S.AllAnnouncementsArea>
-                        <S.LastAcessText>Na OLX desde março de 2020 </S.LastAcessText>
+                        <S.LastAcessText>No TechMart desde março de 2023 </S.LastAcessText>
                         <Link to="/">Ver todos anúncios</Link>
                     </S.AllAnnouncementsArea>
                 </S.InfoArea>
