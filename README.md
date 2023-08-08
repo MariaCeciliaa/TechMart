@@ -33,7 +33,8 @@ O público-alvo do TechMart são pessoas que buscam uma forma mais econômica e 
 2. Executando a Aplicação:
 
 ```powershell
-  # IMPORTE O ARQUIVO OLXAPI.SQL PARA SUA MAQUINA PELO PHPMYADMIN
+  # IMPORTE O ARQUIVO OLXAPI.SQL PARA O PHPMYADMIN DENTRO DO DB CRIADO
+  # **LEMBRANDO QUE SERÁ NECESSÁRIO O USO DO XAMPP
   # API
   $ cd Desenvolvimento
   $ cd backend
@@ -55,9 +56,13 @@ O público-alvo do TechMart são pessoas que buscam uma forma mais econômica e 
   $ cd frontend
   # Instalando as dependências do projeto.
   $ yarn ou npm install
-  # configurando arquivo api.js
-  $ troque o baseURL: para 'http://ipdasuamaquina:8000/api'
+  # Caso de erro devido a conflitos de dependências durante a instalação de pacotes usando o npm
+  # rode este comando:  npm install --legacy-peer-deps
+  # Configurando arquivo api.js
+  # troque o baseURL: para 'http://ipdasuamaquina:8000/api'
   # (para encontrar o ip da sua máquina rode no cmd ipconfig e será o número que estiver no  Endereço IPv4)
   # Inicie a aplicação web
   $ yarn start ou npm start
+  # Caso de erro e não abra a página rode este comando: npm audit fix --force
+  # e depois rode novamente o start.
 ```
