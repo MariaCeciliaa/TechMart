@@ -28,37 +28,37 @@ O público-alvo do TechMart são pessoas que buscam uma forma mais econômica e 
 
  1. Faça um clone do repositório:
 
-```
+```powershell
  $ git clone https://github.com/MariaCeciliaa/TechMart.git
 ```
 
 2. Executando a Aplicação:
 
-```cmd
-# IMPORTE O ARQUIVO OLXAPI.SQL PARA SUA MAQUINA PELO PHPMYADMIN
-# API
+```powershell
+  # IMPORTE O ARQUIVO OLXAPI.SQL PARA SUA MAQUINA PELO PHPMYADMIN
+  # API
   $ cd Desenvolvimento
   $ cd backend
-# Instalando as dependências do projeto.
+  # Instalando as dependências do projeto.
   $ composer install --no-scripts
-# renomeio o arquivo env.example para .env
-# no arquivo .env use DB_DATABASE=olxlaravel ou o nome que você colocou no db
-# Gere uma nova chave para a aplicação laravel:
+  # renomeio o arquivo env.example para .env
+  # no arquivo .env use DB_DATABASE=olxlaravel ou o nome que você colocou no db
+  # Gere uma nova chave para a aplicação laravel:
   $ php artisan key:generate
-# Publicar configuração de JWT
+  # Publicar configuração de JWT
   $ php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
   $ depois execute php artisan jwt:secret
-# Inicie a API
+  # Inicie a API
   $ php artisan serve --host=0.0.0.0
 
-# Aplicação web
+  # Aplicação web
   $ cd Desenvolvimento
   $ cd frontend
-# Instalando as dependências do projeto.
+  # Instalando as dependências do projeto.
   $ yarn ou npm install
-# configurando arquivo api.js
+  # configurando arquivo api.js
   $ troque o baseURL: para 'http://ipdasuamaquina:8000/api'
-# (para encontrar o ip da sua máquina rode no cmd ipconfig e será o número que estiver no  Endereço IPv4)
-# Inicie a aplicação web
+  # (para encontrar o ip da sua máquina rode no cmd ipconfig e será o número que estiver no  Endereço IPv4)
+  # Inicie a aplicação web
   $ yarn start ou npm start
 ```
