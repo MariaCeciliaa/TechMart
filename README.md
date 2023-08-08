@@ -62,4 +62,6 @@ O público-alvo do TechMart são pessoas que buscam uma forma mais econômica e 
   # (para encontrar o ip da sua máquina rode no cmd ipconfig e será o número que estiver no  Endereço IPv4)
   # Inicie a aplicação web
   $ yarn start ou npm start
+  # Caso de erro e não abra a página rode este comando: npm audit fix --force
+  # e depois rode novamente o start.
 ```
