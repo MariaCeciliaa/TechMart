@@ -33,7 +33,8 @@ O público-alvo do TechMart são pessoas que buscam uma forma mais econômica e 
 2. Executando a Aplicação:
 
 ```powershell
-  # IMPORTE O ARQUIVO OLXAPI.SQL PARA SUA MAQUINA PELO PHPMYADMIN
+  # IMPORTE O ARQUIVO OLXAPI.SQL PARA O PHPMYADMIN DENTRO DO DB CRIADO
+  # **LEMBRANDO QUE SERÁ NECESSÁRIO O USO DO XAMPP
   # API
   $ cd Desenvolvimento
   $ cd backend
