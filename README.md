@@ -57,7 +57,7 @@ O público-alvo do TechMart são pessoas que buscam uma forma mais econômica e 
   $ yarn ou npm install
   # Caso de erro devido a conflitos de dependências durante a instalação de pacotes usando o npm
   # rode este comando:  npm install --legacy-peer-deps
-  # configurando arquivo api.js
+  # Configurando arquivo api.js
   # troque o baseURL: para 'http://ipdasuamaquina:8000/api'
   # (para encontrar o ip da sua máquina rode no cmd ipconfig e será o número que estiver no  Endereço IPv4)
   # Inicie a aplicação web
