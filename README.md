@@ -21,6 +21,7 @@ O público-alvo do TechMart são pessoas que buscam uma forma mais econômica e 
 * Pré-requisitos: 
   * É necessário possuir o Laravel instalado no computador
   * É necessário possuir o Git instalado e configurado no computador
+  * É necessário possuir o XAMPP instalado no computador
   * Também, é preciso ter um gerenciador de pacotes seja o NPM ou Yarn.
 
  1. Faça um clone do repositório:
