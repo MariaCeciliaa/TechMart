@@ -63,7 +63,7 @@ export default () => {
             </S.FormArea>
 
             <S.PrivateText>
-                Ao continuar, você concorda com os <S.TextBold>Termos de uso</S.TextBold> e a <S.TextBold>Política de Privacidade</S.TextBold> da OLX, e também, em receber comunicações via e-mail e push da OLX e seus parceiros
+                Ao continuar, você concorda com os <S.TextBold>Termos de uso</S.TextBold> e a <S.TextBold>Política de Privacidade</S.TextBold> do TechMart, e também, em receber comunicações via e-mail e push do TechMart e seus parceiros
                 </S.PrivateText>
         </S.Container>
     )
