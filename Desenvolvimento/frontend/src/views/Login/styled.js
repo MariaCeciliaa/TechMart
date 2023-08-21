@@ -38,8 +38,8 @@ export const Form = styled.div`
 `;
 
 export const Logo = styled.div`
-    height: 40px;
-    width: 70px;
+    height: 5rem;
+    width: 10rem;
     margin-top: -30px;
     margin-bottom: 50px;
 `;
@@ -69,7 +69,7 @@ export const Input = styled.input`
 
 export const SignInButton = styled.button`
     display: flex;
-    background-color: rgb(247, 131, 35);
+    background-color: #111111;
     color: #FFF;
     font-weight: 600;
     border: 0;
@@ -87,8 +87,8 @@ export const Separador = styled.div`
     margin-bottom: 50px;
 `;
 
-export const SignUpMessage = styled.small`
-    color: rgb(110, 10, 214);
+export const SignUpMessage = styled.strong`
+    color: #000000;
     font-size: 15px;
 `;
 
@@ -101,6 +101,6 @@ export const PrivateText = styled.small`
 `;
 
 export const TextBold = styled.strong`
-    color: rgb(110, 10, 214);
+    color: #808080;
 `;
 
