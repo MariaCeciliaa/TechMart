@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 export const Announcement = styled.div`
     width: 240px;
     height: 240px;

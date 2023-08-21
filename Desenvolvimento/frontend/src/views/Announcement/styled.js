@@ -39,7 +39,7 @@ export const PriceAnnouncement = styled.small`
     margin-top:20px;
     font-size: 24px;
     color: #4A4A4A;
-    font-weight: 400;
+    font-weight:400;
 `;
 
 export const DescriptionAnnouncement = styled.p`
