@@ -4,7 +4,7 @@ export const HeaderArea = styled.div`
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width:100%;
+    width: 100%;
     height: 80px; 
 `;
 
@@ -16,13 +16,14 @@ export const HeaderLeft = styled.div`
     }
 
     a:hover {
-        color: #6e0ad6;
+        color: #ffffff;
     }
 `;
 
 export const Logo = styled.img`
     width: 10rem;
     margin-right: 5rem;
+    border-radius: 5rem;
 `;
 
 export const HeaderRight = styled.div`
@@ -40,7 +41,7 @@ export const HeaderRight = styled.div`
     }
 
     a:hover {
-        color: #6e0ad6;
+        color: #ffffff;
     }
 `;
 
@@ -58,7 +59,7 @@ export const ButtonLogout = styled.button`
         text-decoration: none;
         transition: all ease 0.2s;
         :hover {
-        color: #6e0ad6;
+        color: #ffffff;
     }
 `;
 
@@ -80,7 +81,7 @@ export const ButtonAdd = styled.div`
 `;
 
 export const UserName = styled.text`
-    color: #6e0ad6;
+    color: #696969;
     font-weight: 600;
     font-size: 16px;
 `;

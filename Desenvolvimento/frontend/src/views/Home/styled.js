@@ -5,7 +5,7 @@ export const Container = styled.div``;
 export const BannerArea = styled.section`
     display: flex;
     height:250px;
-    background-color:#6e0ad6;
+    background-color:#696969;
     justify-content: center;
     align-items:center;
 `;

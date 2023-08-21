@@ -36,7 +36,7 @@ export default () => {
                 <S.DescriptionAnnouncement>{announcement.description}</S.DescriptionAnnouncement>
                 <S.ButtonsArea>
                     <Link to="/">Favoritar</Link>
-                    <Link to="/">Compartilhar</Link>
+                    <Link to="/" >Compartilhar</Link>
                     <Link to="/">Denunciar</Link>
                 </S.ButtonsArea>
                 <S.LocationArea>
@@ -57,7 +57,7 @@ export default () => {
                     <S.LastAcessText>Último acesso há 11 horas </S.LastAcessText>
                     <S.SeparatorLine></S.SeparatorLine>
                     <S.AllAnnouncementsArea>
-                        <S.LastAcessText>No TechMart desde março de 2023 </S.LastAcessText>
+                        <S.LastAcessText>No TechMart desde março de 2023</S.LastAcessText>
                         <Link to="/">Ver todos anúncios</Link>
                     </S.AllAnnouncementsArea>
                 </S.InfoArea>

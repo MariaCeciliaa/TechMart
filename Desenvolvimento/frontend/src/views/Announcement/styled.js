@@ -5,6 +5,8 @@ export const HeaderArea = styled.div``;
 export const Container = styled.section`
     display: flex;
     flex-direction: row;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
 `;
 
 export const AnnouncementArea = styled.div`
@@ -97,7 +99,7 @@ export const RightArea = styled.div`
 `;
 
 export const PriceArea = styled.div`
-    background-color: #6E04D6;
+    background-color: #696969;
     color: #FFF;
     font-size: 36px;
     font-weight: 300;
@@ -120,7 +122,7 @@ export const InfoArea = styled.div`
     width: 300px;
     height: 300px;
     border-radius: 5px;
-    background-color: #dcdcdc;
+    background-color: #F5F5F5;
     border: 1px solid rgb(216, 216, 216);
     align-items: center;
     justify-content: center;
@@ -159,7 +161,7 @@ export const SeparatorLine = styled.div`
 
 export const LastAcessText = styled.p`
     margin-top:10px;
-    font-size: 12px;
+    font-size: 13px;
     color: #999;
 `;
 
@@ -167,9 +169,10 @@ export const LastAcessText = styled.p`
 export const AllAnnouncementsArea = styled.div`
     a{ 
         color:#111111;
-        font-weight: 600;
+        font-weight: 650;
         text-decoration: none;
         transition: all ease 0.2s;
+        margin-left: 2rem;
     }
 
     a:hover {
