@@ -4,7 +4,6 @@ import { useHistory } from 'react-router-dom';
 import { useSelector } from 'react-redux'
 import Api from '../../api';
 
-
 import Header from '../../components/Header';
 
 export default () => {
@@ -44,7 +43,7 @@ export default () => {
             fd.append('price', price);
             fd.append('zipcode', zipcode);
             fd.append('cover', cover, cover.name);
-            
+        
             await Api.post(`/announcement?token=${token}`, fd, {
                 onUploadProgress: ProgressEvent => {
                     console.log('Upload Progress:' + Math.round(ProgressEvent.loaded / ProgressEvent.total * 100) + '%')
@@ -54,8 +53,9 @@ export default () => {
                 console.log(res);
                 alert('Anuncio cadastrado')
                 history.push('/')
-            }).catch((res) => {
-                console.log(res)            
+            }).catch((error) => {
+                console.error(error.response.data); 
+
             })
         } else {
             alert('Preencha todos os campos')
