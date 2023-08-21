@@ -52,7 +52,7 @@ export default () => {
                 <S.InfoArea>
                     <S.NameUser>{announcement.name}</S.NameUser>
                     <S.ButtonChatArea>
-                        <a target="_blank" href={`https://api.whatsapp.com/send?phone=55${announcement.phone}&text=Ol%C3%A1%20${announcement.name}%20estou%20interessado%20no%20seu%20an%C3%BAncio%20da%20olx`}>Mensagem via whatsApp</a>
+                        <a target="_blank" rel="noopener noreferrer" href={`https://api.whatsapp.com/send?phone=55${announcement.phone}&text=Ol%C3%A1%20${announcement.name}%20estou%20interessado%20no%20seu%20an%C3%BAncio%20da%20olx`}>Mensagem via whatsApp</a>
                     </S.ButtonChatArea>
                     <S.LastAcessText>Último acesso há 11 horas </S.LastAcessText>
                     <S.SeparatorLine></S.SeparatorLine>

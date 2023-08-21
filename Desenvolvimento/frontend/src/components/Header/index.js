@@ -14,7 +14,7 @@ export default ({logged}) => {
     const history = useHistory();
 
     const handleLogout = () => {
-        Api.post(`auth/logout?token=${token}`).then((res) => {
+        Api.post(`auth/logout?token=${token}`).then((_res) => {
             dispatch({
                 type: 'SET_TOKEN',
                 payload: { token: ''}

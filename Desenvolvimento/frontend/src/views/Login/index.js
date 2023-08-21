@@ -1,5 +1,9 @@
-import React, {useState, useEffect} from 'react'
-import { Link, useHistory, Redirect } from 'react-router-dom';
+// import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
+
+// import { Link, useHistory, Redirect } from 'react-router-dom';
+import { Link, useHistory} from 'react-router-dom';
+
 import { useDispatch } from 'react-redux';
 import * as S from './styled';
 import Api from '../../api';
@@ -14,7 +18,7 @@ export default () => {
     const [passwordField, setPasswordField] = useState();
 
     const handleLogin = async () => {
-        if(emailField != '' && passwordField != '') {
+        if(emailField !== '' && passwordField !== '') {
             await Api.post('/auth/login', {
                 email: emailField,
                 password: passwordField

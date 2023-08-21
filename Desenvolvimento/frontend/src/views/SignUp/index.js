@@ -16,7 +16,7 @@ export default () => {
     const [phoneField, setPhoneField] = useState('');
 
     const handleSignUp = async () => {
-        if(emailField != '' && passwordField != '' && nameField != '' && phoneField != '') {
+        if(emailField !== '' && passwordField !== '' && nameField !== '' && phoneField !== '') {
             await Api.post('/user', {
                 name: nameField,
                 email: emailField,
