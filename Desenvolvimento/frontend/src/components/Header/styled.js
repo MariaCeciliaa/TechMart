@@ -21,8 +21,8 @@ export const HeaderLeft = styled.div`
 `;
 
 export const Logo = styled.img`
-    width: 100px;
-    margin-right: 50px;
+    width: 10rem;
+    margin-right: 5rem;
 `;
 
 export const HeaderRight = styled.div`

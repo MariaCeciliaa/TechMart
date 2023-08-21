@@ -63,7 +63,7 @@ export const ButtonsArea = styled.div`
         justify-content: center;
         padding: 0px 8px;
         background: transparent;
-        color: rgb(247, 131, 35);
+        color: #111111;
         border: 1px solid;
         margin-right: 20px;
     }

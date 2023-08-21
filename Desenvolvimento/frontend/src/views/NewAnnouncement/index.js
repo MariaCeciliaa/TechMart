@@ -86,13 +86,13 @@ export default () => {
                 <S.Input placeholder="R$" onChange={e=>setPrice(e.target.value)}></S.Input>
                 
                 <S.Text>Contato</S.Text>
-                <S.Contact>(11) 97604-8255</S.Contact>
+                <S.Contact>(43) 91234-5678</S.Contact>
 
                 <S.Text>Adicionar capa</S.Text>
                 <S.ButtonAddPhoto type="file" name="cover" onChange={e=>setCover(e.target.files[0])}></S.ButtonAddPhoto>
 
                 <S.Alert>
-                Não pedimos códigos por ligação, chat ou WhatsApp. Desconfie se alguém entrar em contato em nome da OLX.
+                Não pedimos códigos por ligação, chat ou WhatsApp. Desconfie se alguém entrar em contato em nome do TechMart.
                 </S.Alert>
 
             </S.FormArea>
