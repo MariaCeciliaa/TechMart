@@ -120,7 +120,7 @@ export const InfoArea = styled.div`
     width: 300px;
     height: 300px;
     border-radius: 5px;
-    background-color: rgb(249, 249, 249);
+    background-color: #dcdcdc;
     border: 1px solid rgb(216, 216, 216);
     align-items: center;
     justify-content: center;
@@ -146,7 +146,7 @@ export const ButtonChatArea = styled.div`
         border-radius: 32px;
         align-items: center;
         justify-content: center;
-        background: rgb(247, 131, 35);
+        background: #111111;
         color: #FFF;
         border: 1px solid;
     }
@@ -166,14 +166,14 @@ export const LastAcessText = styled.p`
 
 export const AllAnnouncementsArea = styled.div`
     a{ 
-        color:#9027B0;
+        color:#111111;
         font-weight: 600;
         text-decoration: none;
         transition: all ease 0.2s;
     }
 
     a:hover {
-        color:#6E04D6;
+        color:#ffffff;
     }
 `;
 

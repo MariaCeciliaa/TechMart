@@ -21,7 +21,7 @@ export const HeaderLeft = styled.div`
 `;
 
 export const Logo = styled.img`
-    width: 50px;
+    width: 100px;
     margin-right: 50px;
 `;
 
@@ -73,7 +73,7 @@ export const ButtonAdd = styled.div`
     border: 1px solid transparent;
     align-items: center;
     text-decoration: none;
-    background-color: rgb(247, 131, 35);
+    background-color: #111111;
     border-radius: 40px;
     font-weight: bold;
     margin-left:30px;
