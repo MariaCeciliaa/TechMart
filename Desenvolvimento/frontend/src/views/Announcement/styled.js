@@ -5,6 +5,8 @@ export const HeaderArea = styled.div``;
 export const Container = styled.section`
     display: flex;
     flex-direction: row;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
 `;
 
 export const AnnouncementArea = styled.div`
@@ -39,7 +41,7 @@ export const PriceAnnouncement = styled.small`
     margin-top:20px;
     font-size: 24px;
     color: #4A4A4A;
-    font-weight: 400;
+    font-weight:400;
 `;
 
 export const DescriptionAnnouncement = styled.p`
@@ -63,7 +65,7 @@ export const ButtonsArea = styled.div`
         justify-content: center;
         padding: 0px 8px;
         background: transparent;
-        color: rgb(247, 131, 35);
+        color: #111111;
         border: 1px solid;
         margin-right: 20px;
     }
@@ -97,7 +99,7 @@ export const RightArea = styled.div`
 `;
 
 export const PriceArea = styled.div`
-    background-color: #6E04D6;
+    background-color: #696969;
     color: #FFF;
     font-size: 36px;
     font-weight: 300;
@@ -120,7 +122,7 @@ export const InfoArea = styled.div`
     width: 300px;
     height: 300px;
     border-radius: 5px;
-    background-color: rgb(249, 249, 249);
+    background-color: #F5F5F5;
     border: 1px solid rgb(216, 216, 216);
     align-items: center;
     justify-content: center;
@@ -146,7 +148,7 @@ export const ButtonChatArea = styled.div`
         border-radius: 32px;
         align-items: center;
         justify-content: center;
-        background: rgb(247, 131, 35);
+        background: #111111;
         color: #FFF;
         border: 1px solid;
     }
@@ -159,21 +161,22 @@ export const SeparatorLine = styled.div`
 
 export const LastAcessText = styled.p`
     margin-top:10px;
-    font-size: 12px;
+    font-size: 13px;
     color: #999;
 `;
 
 
 export const AllAnnouncementsArea = styled.div`
     a{ 
-        color:#9027B0;
-        font-weight: 600;
+        color:#111111;
+        font-weight: 650;
         text-decoration: none;
         transition: all ease 0.2s;
+        margin-left: 2rem;
     }
 
     a:hover {
-        color:#6E04D6;
+        color:#ffffff;
     }
 `;
 

@@ -56,8 +56,10 @@ export const Select = styled.select`
 export const SubText = styled.small``;
 
 export const ButtonAddPhoto = styled.input`
-    margin-bottom: 20px;
-    width: 50px;
+    margin-bottom: 2rem;
+    width: auto;
+    height: auto;
+    padding: 0;
 `;
 
 export const Contact = styled.text`
@@ -67,9 +69,9 @@ export const Contact = styled.text`
 
 export const Alert = styled.div`
     max-width: 70%;
-    border: 1px solid #f78323;
-    color: #FF7F14;
-    background: #FFFAF5;
+    border: 1px solid #111111;
+    color: #111111;
+    background: #dcdcdc;
     font-size: 12px;
     padding: 20px;
 `;
@@ -83,13 +85,14 @@ export const SubmitArea = styled.div`
 
 export const PrivateText = styled.text`
     color: #6e0ad6;
+    font-size: 20px;
 `;
 
 export const ButtonSubmit = styled.button`
     width: 350px;
     height: 50px;
     border-radius: 15px;
-    background-color: #F78323;
+    background-color: #111111;
     border: none;
     color: #FFF;
     font-weight: 600;

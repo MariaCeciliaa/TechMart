@@ -36,7 +36,7 @@ export default () => {
                 <S.DescriptionAnnouncement>{announcement.description}</S.DescriptionAnnouncement>
                 <S.ButtonsArea>
                     <Link to="/">Favoritar</Link>
-                    <Link to="/">Compartilhar</Link>
+                    <Link to="/" >Compartilhar</Link>
                     <Link to="/">Denunciar</Link>
                 </S.ButtonsArea>
                 <S.LocationArea>
@@ -52,12 +52,12 @@ export default () => {
                 <S.InfoArea>
                     <S.NameUser>{announcement.name}</S.NameUser>
                     <S.ButtonChatArea>
-                        <a target="_blank" href={`https://api.whatsapp.com/send?phone=55${announcement.phone}&text=Ol%C3%A1%20${announcement.name}%20estou%20interessado%20no%20seu%20an%C3%BAncio%20da%20olx`}>Mensagem via whatsApp</a>
+                        <a target="_blank" rel="noopener noreferrer" href={`https://api.whatsapp.com/send?phone=55${announcement.phone}&text=Ol%C3%A1%20${announcement.name}%20estou%20interessado%20no%20seu%20an%C3%BAncio%20do%20TechMart`}>Mensagem via whatsApp</a>
                     </S.ButtonChatArea>
                     <S.LastAcessText>Último acesso há 11 horas </S.LastAcessText>
                     <S.SeparatorLine></S.SeparatorLine>
                     <S.AllAnnouncementsArea>
-                        <S.LastAcessText>No TechMart desde março de 2023 </S.LastAcessText>
+                        <S.LastAcessText>No TechMart desde março de 2023</S.LastAcessText>
                         <Link to="/">Ver todos anúncios</Link>
                     </S.AllAnnouncementsArea>
                 </S.InfoArea>

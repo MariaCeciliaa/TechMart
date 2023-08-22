@@ -6,20 +6,16 @@ const initialState = {
 };
 
 const UserReducer = (state = initialState, action) => {
-
+// eslint-disable-next-line
     switch(action.type) {
         case 'SET_TOKEN':
             return { ...state, token:action.payload.token }
-        break;
         case 'SET_NAME':
             return { ...state, name:action.payload.name }
-        break;
         case 'SET_PHONE':
             return { ...state, phone:action.payload.phone }
-        break;
         case 'SET_CITY':
             return { ...state, city:action.payload.city }
-        break;
     }
 
     return state;

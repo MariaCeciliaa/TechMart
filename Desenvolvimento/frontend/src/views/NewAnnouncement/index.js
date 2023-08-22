@@ -4,7 +4,6 @@ import { useHistory } from 'react-router-dom';
 import { useSelector } from 'react-redux'
 import Api from '../../api';
 
-
 import Header from '../../components/Header';
 
 export default () => {
@@ -36,7 +35,7 @@ export default () => {
     }, [cover])
 
     const handleSubmit = async () => {
-        if(title != '' && description != '' && category != '' && price != '' && zipcode != '') {
+        if(title !== '' && description !== '' && category !== '' && price !== '' && zipcode !== '') {
             const fd = new FormData();            
             fd.append('title', title);
             fd.append('description', description);
@@ -44,7 +43,7 @@ export default () => {
             fd.append('price', price);
             fd.append('zipcode', zipcode);
             fd.append('cover', cover, cover.name);
-            
+        
             await Api.post(`/announcement?token=${token}`, fd, {
                 onUploadProgress: ProgressEvent => {
                     console.log('Upload Progress:' + Math.round(ProgressEvent.loaded / ProgressEvent.total * 100) + '%')
@@ -54,8 +53,9 @@ export default () => {
                 console.log(res);
                 alert('Anuncio cadastrado')
                 history.push('/')
-            }).catch((res) => {
-                console.log(res)            
+            }).catch((error) => {
+                console.error(error.response.data); 
+
             })
         } else {
             alert('Preencha todos os campos')
@@ -86,13 +86,13 @@ export default () => {
                 <S.Input placeholder="R$" onChange={e=>setPrice(e.target.value)}></S.Input>
                 
                 <S.Text>Contato</S.Text>
-                <S.Contact>(11) 97604-8255</S.Contact>
+                <S.Contact>(43) 91234-5678</S.Contact>
 
                 <S.Text>Adicionar capa</S.Text>
                 <S.ButtonAddPhoto type="file" name="cover" onChange={e=>setCover(e.target.files[0])}></S.ButtonAddPhoto>
 
                 <S.Alert>
-                Não pedimos códigos por ligação, chat ou WhatsApp. Desconfie se alguém entrar em contato em nome da OLX.
+                Não pedimos códigos por ligação, chat ou WhatsApp. Desconfie se alguém entrar em contato em nome do TechMart.
                 </S.Alert>
 
             </S.FormArea>

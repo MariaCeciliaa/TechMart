@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import * as S from './styled';
 import { Link } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+//import { useSelector } from 'react-redux';
 import Api from '../../api';
 
 import Header from '../../components/Header';

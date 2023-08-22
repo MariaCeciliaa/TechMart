@@ -16,7 +16,7 @@ export default () => {
     const [phoneField, setPhoneField] = useState('');
 
     const handleSignUp = async () => {
-        if(emailField != '' && passwordField != '' && nameField != '' && phoneField != '') {
+        if(emailField !== '' && passwordField !== '' && nameField !== '' && phoneField !== '') {
             await Api.post('/user', {
                 name: nameField,
                 email: emailField,
@@ -66,7 +66,7 @@ export default () => {
                         <div className="form-group">
                             <S.Label>Senha</S.Label>
                             <S.Input type="password" name="password" onChange={e=>setPasswordField(e.target.value)} className="form-control" />
-                        </div>                        
+                        </div>   
                         <S.Separador></S.Separador>
                         <S.SignInButton onClick={handleSignUp}>Cadastrar</S.SignInButton>
                     
