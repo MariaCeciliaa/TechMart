@@ -37,7 +37,14 @@ export default () => {
     useEffect(()=> {
         getAnnouncements();
     }, [])
-    
+
+
+    //Implementando busca
+    const [busca, setBusca] = useState('');
+
+    const titleFiltrado = announcements.filter((item) => 
+        item.title && item.title.toLowerCase().includes(busca.toLowerCase())
+    );
 
     return (
         <>
@@ -47,10 +54,13 @@ export default () => {
         <S.BannerArea className="container-fluid">
             <S.Banner>
             <form>
-                <S.Input placeholder="Estou procurando por..." />
+                <S.Input placeholder="Estou procurando por..." 
+                         value={busca}
+                         onChange={(ev) => setBusca(ev.target.value)}
+                />
             </form>
-            <S.CategoriesArea>
 
+            <S.CategoriesArea>
                 {categories &&
                     categories.map((item, key) => (
                         <Link to="/" key={key}>
@@ -62,8 +72,6 @@ export default () => {
                                 </S.CategoryTitleArea>
                         </Link>
                     ))}
-                                 
-
             </S.CategoriesArea>
             </S.Banner>
         </S.BannerArea>
@@ -73,7 +81,7 @@ export default () => {
 
             
             <S.AnnouncementsArea>
-            {announcements.map((item, key) => (
+            {titleFiltrado.map((item, key) => (
 
                 <AnnouncementCard data={item} key={key} />
                  /*<Link to="/" key={key}>
