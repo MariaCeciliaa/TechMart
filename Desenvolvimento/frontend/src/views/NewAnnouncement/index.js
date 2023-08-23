@@ -35,7 +35,7 @@ export default () => {
     }, [cover])
 
     const handleSubmit = async () => {
-        if(title !== '' && description !== '' && category !== '' && price !== '' && zipcode !== '') {
+        if(title !== '' && description !== '' && category !== '' && price !== '' && zipcode !== '' && cover !== undefined) {
             const fd = new FormData();            
             fd.append('title', title);
             fd.append('description', description);

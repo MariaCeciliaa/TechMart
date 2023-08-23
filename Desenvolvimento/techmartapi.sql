@@ -100,7 +100,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `phone`, `city`, `password`, `token`) VALUES
-(1, 'Matheus', 'matheus@gmail.com', '11976048255', 'São Paulo', '$2y$10$EaMq8ug7Jd6qLtO270UIDulFZtIn45W3Rwkk5FwPsYCm1hZb0aBVS', NULL);
+(1, 'Admin', 'admin@gmail.com', '43999999999', 'Londrina', 'admin', NULL);
 
 --
 -- Índices para tabelas despejadas
