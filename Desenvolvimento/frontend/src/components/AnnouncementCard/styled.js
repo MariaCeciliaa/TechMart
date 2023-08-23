@@ -1,11 +1,21 @@
 import styled from 'styled-components';
 
 export const Announcement = styled.div`
-    width: 240px;
-    height: 240px;
+    width: 245px;
+    height: 245px;
     display: flex;
+    padding: 14px;
     flex-direction:column;
     margin-right: 30px;
+    transition: all ease 0.2s;
+    border-radius: 5%;
+    margin-bottom: 10px;
+    box-shadow: 10px 10px 10px rgba(0,0,0, 0.1);
+    :hover {
+        width: 250px;
+        height: 250px;  
+        margin: 10px;
+    } 
 `;
 
 export const ImageAnnouncement = styled.img`
@@ -17,7 +27,7 @@ export const ImageAnnouncement = styled.img`
 export const DescriptionAnnouncement = styled.small`
     margin-top: 5px;
     color: #4a4a4a;
-    font-size: 14px;
+    font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
 `;
 

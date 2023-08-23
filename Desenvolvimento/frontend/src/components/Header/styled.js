@@ -16,7 +16,7 @@ export const HeaderLeft = styled.div`
     }
 
     a:hover {
-        color: #ffffff;
+        color: #A9A9A9;
     }
 `;
 
@@ -41,7 +41,7 @@ export const HeaderRight = styled.div`
     }
 
     a:hover {
-        color: #ffffff;
+        color: #A9A9A9;
     }
 `;
 
@@ -59,7 +59,7 @@ export const ButtonLogout = styled.button`
         text-decoration: none;
         transition: all ease 0.2s;
         :hover {
-        color: #ffffff;
+        color: #A9A9A9;
     }
 `;
 
@@ -78,6 +78,11 @@ export const ButtonAdd = styled.div`
     border-radius: 40px;
     font-weight: bold;
     margin-left:30px;
+    transition: all ease 0.45s;
+    :hover {
+        background-color: #ffffff;
+        color: #000000;
+    }
 `;
 
 export const UserName = styled.text`

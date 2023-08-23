@@ -68,10 +68,10 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`id`, `name`, `covercategory`) VALUES
-(4, 'Celulares e Smartphones', 'eletronicos.png'),
+(4, 'Celulares', 'eletronicos.png'),
 (6, 'Games', 'videogame.png'),
 (7, 'TVs', 'monitor.png'),
-(8, 'Tablets e iPads', 'tablet.png'),
+(8, 'Tablets', 'tablet.png'),
 (9, 'Computadores', 'pc.png'),
 (10, 'Periféricos', 'fone.png');
 

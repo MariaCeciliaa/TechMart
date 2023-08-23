@@ -25,6 +25,8 @@ export const Input = styled.input`
     font-size: 20px;
     margin-bottom: 20px;
     margin-top:30px;
+    transition: all ease 0.3s;
+    box-shadow: 3px 3px 3px rgba(0,0,0, 0.3);
 `;
 
 export const CategoriesArea = styled.div`
@@ -44,9 +46,19 @@ export const CategoryItem = styled.div`
     align-items: center;
     background-color: #FFF;
     width: 60px;
-    height:60px;
+    height: 60px;
     border-radius: 30px;    
-    margin-bottom: 5px;    
+    margin-bottom: 5px; 
+    margin-top: 10px;
+    transition: all ease 0.3s;
+    box-shadow: 3px 3px 3px rgba(0,0,0, 0.3);
+    :hover {
+        box-shadow: 10px 10px 25px rgba(0,0,0, 0.5);
+        width: 63px;
+        height: 63px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }   
 `;
 
 export const CategoryImage = styled.img`
@@ -59,9 +71,11 @@ export const CategoryItemTitle = styled.text`
     color: #FFF;
     text-align: center;
     margin: 8px 0px 0px;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1;
     text-decoration: none;
+    font-family: Arial;
+    font-weight: 300;
 `;
 
 export const CategoryTitleArea = styled.div`
