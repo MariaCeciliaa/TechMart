@@ -32,8 +32,10 @@ export default ({logged}) => {
             <S.HeaderLeft>
                 <Link to="/">
                     <S.Logo src={Logo} />
-                </Link>                
-                <Link to="/">Buscar</Link>
+                </Link>  
+
+                <Link to="/">Buscar</Link> 
+
             </S.HeaderLeft>
             <S.HeaderRight>
                 <S.MenuItem>

@@ -38,13 +38,22 @@ export default () => {
         getAnnouncements();
     }, [])
 
+    const [selectedCategory, setSelectedCategory] = useState(null);
 
-    //Implementando busca
+    //implementando busca
     const [busca, setBusca] = useState('');
 
-    const titleFiltrado = announcements.filter((item) => 
+    const filteredAnnouncements = announcements.filter((item) => {
+        if (!selectedCategory) {
+            return true;
+        }
+        return item.category === selectedCategory;
+    });
+    
+    const titleFiltrado = filteredAnnouncements.filter((item) =>
         item.title && item.title.toLowerCase().includes(busca.toLowerCase())
     );
+    
 
     return (
         <>
@@ -63,22 +72,26 @@ export default () => {
             <S.CategoriesArea>
                 {categories &&
                     categories.map((item, key) => (
-                        <Link to="/" key={key}>
-                                <S.CategoryItem>
-                                    <S.CategoryImage src={item.covercategory} />
-                                </S.CategoryItem>
-                                <S.CategoryTitleArea>
+                        <Link
+                            to="/"
+                            key={key}
+                            onClick={() => setSelectedCategory(item.id)}
+                        >
+                            <S.CategoryItem>
+                                <S.CategoryImage src={item.covercategory} />
+                            </S.CategoryItem>
+                            <S.CategoryTitleArea>
                                 <S.CategoryItemTitle>{item.name}</S.CategoryItemTitle>
-                                </S.CategoryTitleArea>
+                            </S.CategoryTitleArea>
                         </Link>
                     ))}
             </S.CategoriesArea>
+
             </S.Banner>
         </S.BannerArea>
 
         <S.Announcements className="container">
                 <S.Title>Anúncios recentes</S.Title>
-
             
             <S.AnnouncementsArea>
             {titleFiltrado.map((item, key) => (
@@ -93,7 +106,6 @@ export default () => {
                 </Link>*/
             ))}
                
-
             </S.AnnouncementsArea>
         </S.Announcements>
 
