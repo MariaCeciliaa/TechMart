@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import * as S from './styled';
 import { Link, useHistory } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
@@ -34,7 +34,7 @@ export default ({logged}) => {
                     <S.Logo src={Logo} />
                 </Link>  
 
-                <Link to="/">Buscar</Link> 
+                <Link to="/">Buscar</Link>
 
             </S.HeaderLeft>
             <S.HeaderRight>
@@ -62,7 +62,7 @@ export default ({logged}) => {
                 </Link>                   
                     :
                 <Link to="/announcement">
-                    <S.ButtonAdd>Anunciar</S.ButtonAdd>
+                    <S.ButtonAdd>Leiloar</S.ButtonAdd>
                 </Link>
                 }
             </S.HeaderRight>

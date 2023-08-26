@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import * as S from './styled';
 import { Link } from 'react-router-dom';
-//import { useSelector } from 'react-redux';
 import Api from '../../api';
 
 import Header from '../../components/Header';
@@ -38,12 +37,15 @@ export default () => {
         getAnnouncements();
     }, [])
 
-    const [selectedCategory, setSelectedCategory] = useState(null);
+    //busca e filtro categorias
 
-    //implementando busca
+    const [selectedCategory, setSelectedCategory] = useState(null);
     const [busca, setBusca] = useState('');
 
     const filteredAnnouncements = announcements.filter((item) => {
+        if (selectedCategory === 0) {
+            return true;
+        }
         if (!selectedCategory) {
             return true;
         }
@@ -91,7 +93,7 @@ export default () => {
         </S.BannerArea>
 
         <S.Announcements className="container">
-                <S.Title>Anúncios recentes</S.Title>
+                <S.Title>Leilões recentes</S.Title>
             
             <S.AnnouncementsArea>
             {titleFiltrado.map((item, key) => (
