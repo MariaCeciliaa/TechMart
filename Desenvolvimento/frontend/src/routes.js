@@ -8,7 +8,6 @@ import NewAnnouncement from './views/NewAnnouncement';
 import SignUp from './views/SignUp';
 
 import RoutesPrivate from './routesPrivate';
-import AnnouncementCard from './components/AnnouncementCard';
 
 export default () => {
     return (

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import * as S from './styled';
 import { Link, useHistory } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
@@ -27,10 +27,15 @@ export default ({logged}) => {
         });  
     }
 
+    const handleCategoryFilterRemoval = () => { 
+        sessionStorage.removeItem('categoria');
+    };
+    console.log("header: ",sessionStorage.getItem('categoria'));
+
     return (
         <S.HeaderArea>
             <S.HeaderLeft>
-                <Link to="/">
+                <Link onClick={handleCategoryFilterRemoval} to="/">
                     <S.Logo src={Logo} />
                 </Link>  
 
@@ -39,7 +44,7 @@ export default ({logged}) => {
                 <S.MenuItem>
                 </S.MenuItem>
                 <S.MenuItem>
-                    <Link to="/">Meus Anúncios</Link>
+                    <Link to="/" onClick={handleCategoryFilterRemoval}>Meus Leilões</Link>
                 </S.MenuItem>
 
                 {!token &&

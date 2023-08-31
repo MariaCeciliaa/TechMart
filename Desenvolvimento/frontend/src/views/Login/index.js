@@ -1,7 +1,4 @@
-// import React, {useState, useEffect} from 'react'
 import React, {useState} from 'react'
-
-// import { Link, useHistory, Redirect } from 'react-router-dom';
 import { Link, useHistory} from 'react-router-dom';
 
 import { useDispatch } from 'react-redux';
@@ -34,11 +31,11 @@ export default () => {
                     });             
                     history.replace('/');
                 } else {
-                    alert(res.data.error)
+                    alert(res.data.error);
                 }
             })
         } else {
-             alert('preencha todos os campos')
+            alert('Preencha todos os campos');
              return null;
         }
     }
