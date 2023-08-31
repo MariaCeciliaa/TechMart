@@ -36,7 +36,7 @@ export default () => {
             })
         } else {
             alert('Preencha todos os campos');
-             return null;
+            return null;
         }
     }
 
