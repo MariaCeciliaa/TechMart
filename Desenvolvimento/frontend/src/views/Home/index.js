@@ -21,7 +21,7 @@ export default () => {
         });
     }
 
-    async function getAnnouncements() {
+    const getAnnouncements = async () => {
         setAnnouncements([]);
         await Api.get('/announcements').then((res) => {
             setAnnouncements(res.data.data);

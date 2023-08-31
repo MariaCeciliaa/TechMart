@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Faceades\Auth;
+//use Illuminate\Support\Faceades\Auth;
 use Illuminate\Support\Facades\Validator;
 use App\Models\User; 
 
@@ -97,7 +97,7 @@ class AuthController extends Controller
         auth()->logout();
         return ['error'=>''];
     }
-
+    
     public function refresh() {
         $array = ['error'=>''];
         $token = auth()->refresh();
