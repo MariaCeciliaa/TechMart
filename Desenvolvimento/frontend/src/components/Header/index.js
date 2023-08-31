@@ -34,8 +34,6 @@ export default ({logged}) => {
                     <S.Logo src={Logo} />
                 </Link>  
 
-                <Link to="/">Buscar</Link>
-
             </S.HeaderLeft>
             <S.HeaderRight>
                 <S.MenuItem>

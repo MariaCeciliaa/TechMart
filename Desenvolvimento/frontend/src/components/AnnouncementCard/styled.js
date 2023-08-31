@@ -10,7 +10,7 @@ export const Announcement = styled.div`
     transition: all ease 0.2s;
     border-radius: 5%;
     margin-bottom: 10px;
-    box-shadow: 10px 10px 10px rgba(0,0,0, 0.1);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
     :hover {
         width: 250px;
         height: 250px;  

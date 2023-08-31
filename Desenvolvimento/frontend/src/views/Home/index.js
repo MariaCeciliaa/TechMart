@@ -37,16 +37,13 @@ export default () => {
         getAnnouncements();
     }, [])
 
-    //busca e filtro categorias
+    //busca e filtra categorias
 
     const [selectedCategory, setSelectedCategory] = useState(null);
     const [busca, setBusca] = useState('');
 
     const filteredAnnouncements = announcements.filter((item) => {
-        if (selectedCategory === 0) {
-            return true;
-        }
-        if (!selectedCategory) {
+        if (selectedCategory === 0 || selectedCategory === null) {
             return true;
         }
         return item.category === selectedCategory;
@@ -88,24 +85,19 @@ export default () => {
                         </Link>
                     ))}
             </S.CategoriesArea>
-
+            <S.FilterArea>
+                <S.FilterItem onClick={ () => setSelectedCategory(0)}>Limpar Filtro</S.FilterItem>
+            </S.FilterArea>
             </S.Banner>
         </S.BannerArea>
 
         <S.Announcements className="container">
-                <S.Title>Leilões recentes</S.Title>
+            <S.Title>Leilões recentes</S.Title>
             
             <S.AnnouncementsArea>
             {titleFiltrado.map((item, key) => (
 
                 <AnnouncementCard data={item} key={key} />
-                 /*<Link to="/" key={key}>
-                    <S.Announcement>
-                        <S.ImageAnnouncement src={item.cover} />
-                        <S.DescriptionAnnouncement>{item.title} </S.DescriptionAnnouncement>
-                        <S.PriceAnnouncement>{item.price}</S.PriceAnnouncement>
-                    </S.Announcement>
-                </Link>*/
             ))}
                
             </S.AnnouncementsArea>

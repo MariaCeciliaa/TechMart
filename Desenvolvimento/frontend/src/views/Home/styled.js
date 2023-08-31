@@ -4,7 +4,7 @@ export const Container = styled.div``;
 
 export const BannerArea = styled.section`
     display: flex;
-    height:250px;
+    height:260px;
     background-color:#696969;
     justify-content: center;
     align-items:center;
@@ -53,11 +53,7 @@ export const CategoryItem = styled.div`
     transition: all ease 0.3s;
     box-shadow: 3px 3px 3px rgba(0,0,0, 0.3);
     :hover {
-        box-shadow: 10px 10px 25px rgba(0,0,0, 0.5);
-        width: 63px;
-        height: 63px;
-        margin-left: 10px;
-        margin-right: 10px;
+        box-shadow: rgba(0, 0, 0, 0.7) 0px 22px 70px 4px;
     }   
 `;
 
@@ -80,7 +76,9 @@ export const CategoryItemTitle = styled.text`
 
 export const CategoryTitleArea = styled.div`
    width: 60px;
-   height: 60px;
+   height: 30px;
+   display: flex;
+   justify-content: center;
 `;
 
 export const Announcements = styled.section`
@@ -137,3 +135,18 @@ export const PriceAnnouncement = styled.text`
     font-family: Arial, Helvetica, sans-serif
 `;
 
+export const FilterArea = styled.div`
+    display: flex;
+    flex-direction: row;
+`;
+
+export const FilterItem = styled.a`
+    margin-left: 50px;
+    color: rgb(74, 74, 74);
+    font-size: 14px;
+    text-decoration: none;
+    transition: all ease 0.2s;
+    :hover {
+        color: #A9A9A9;
+    }
+`;

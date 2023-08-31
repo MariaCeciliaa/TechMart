@@ -22,7 +22,6 @@ export const HeaderLeft = styled.div`
 
 export const Logo = styled.img`
     width: 10rem;
-    margin-right: 5rem;
     border-radius: 5rem;
 `;
 
@@ -80,7 +79,7 @@ export const ButtonAdd = styled.div`
     margin-left:30px;
     transition: all ease 0.45s;
     :hover {
-        background-color: #ffffff;
+        background-color: #A9A9A9;
         color: #000000;
     }
 `;
