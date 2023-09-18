@@ -22,7 +22,7 @@ export default () => {
                 email: emailField,
                 phone: phoneField,
                 password: passwordField,
-                city: 'São Paulo'
+                city: 'Londrina'
             }).then((res) => {
                 if(res.data.token) {
                     dispatch({

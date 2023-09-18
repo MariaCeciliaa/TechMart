@@ -66,7 +66,7 @@ export default () => {
         <S.Container className="container">
             <Header logged={LoggedUser} />
 
-            <S.TitlePage>O que você está leiloando?</S.TitlePage>
+            <S.TitlePage>O que você está anunciando?</S.TitlePage>
 
             <S.FormArea>
                 <S.Input placeholder="Titulo" onChange={e=>setTitle(e.target.value)}></S.Input>

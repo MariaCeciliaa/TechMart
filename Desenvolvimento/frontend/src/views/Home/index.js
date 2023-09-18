@@ -99,7 +99,7 @@ export default () => {
                 </S.Banner>
             </S.BannerArea>
             <S.Announcements className="container">
-                <S.Title>Leilões recentes</S.Title>
+                <S.Title>Anúncios recentes</S.Title>
                 <S.AnnouncementsArea>
                     {titleFiltrado.map((item, key) => (
                         <AnnouncementCard data={item} key={key} />
