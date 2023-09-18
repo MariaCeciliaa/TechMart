@@ -44,7 +44,7 @@ export default ({logged}) => {
                 <S.MenuItem>
                 </S.MenuItem>
                 <S.MenuItem>
-                    <Link to="/" onClick={handleCategoryFilterRemoval}>Meus Leilões</Link>
+                    <Link to="/" onClick={handleCategoryFilterRemoval}>Anúncios</Link>
                 </S.MenuItem>
 
                 {!token &&
@@ -65,7 +65,7 @@ export default ({logged}) => {
                 </Link>                   
                     :
                 <Link to="/announcement">
-                    <S.ButtonAdd>Leiloar</S.ButtonAdd>
+                    <S.ButtonAdd>Anunciar</S.ButtonAdd>
                 </Link>
                 }
             </S.HeaderRight>
