@@ -32,7 +32,7 @@ CREATE TABLE `announcements` (
   `id_user` int(11) NOT NULL,
   `title` varchar(255) NOT NULL,
   `category` int(11) NOT NULL DEFAULT 0,
-  `description` text NOT NULL DEFAULT '0',
+  `description` text NOT NULL DEFAULT ('0'),
   `price` varchar(255) NOT NULL,
   `zipcode` varchar(50) NOT NULL,
   `images` varchar(255) NOT NULL,
