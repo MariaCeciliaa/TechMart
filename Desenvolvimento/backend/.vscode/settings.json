@@ -1,9 +1,0 @@
-{
-    "peacock.color": "#f2dad9",
-    "editor.colorDecorators": true,
-    "workbench.editor.decorations.badges": true,
-    "search.decorations.colors": true,
-    "markdown-preview-enhanced.usePuppeteerCore": true,
-    "workbench.editor.decorations.colors": true,
-    "workbench.preferredDarkColorTheme": "Default Dark Modern"
-}
